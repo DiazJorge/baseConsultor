@@ -1,0 +1,2 @@
+# baseConsultor
+Borrador interfaz consultor
