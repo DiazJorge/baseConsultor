@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Proyecto</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/footer-distributed.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+<body>	
+<div class="contenedor">
+<div class="principal">
+	<div class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">INICIO</a>
+			</div>
+			<ul class="nav navbar-nav">	
+				<li><a href="autenticador.html">AUTENTICADOR</a></li>
+				<li><a href="consultor.html">CONSULTOR</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="jumbotron" style="margin-top:-70px;">
+		<div class="container" align="center">
+			<h2>Autenticador</h2>
+			<p>Con un sistema de autenticación interna se pueden desarrollar otros sistemas que utilicen dicho servicio de autenticación para no tener que guardar datos personales o contraseñas.</p>
+		</div>
+	</div>
+
+	<div class="container">
+	<div id="login-overlay" class="modal-dialog" align="center">
+        <div class="col-xs-6" align="center">
+            <div class="well">
+				<form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+                    <div class="form-group">
+                        <label for="username" class="control-label">Usuario</label>
+                        <input type="text" class="form-control" id="username" name="username" title="user" placeholder="example@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="control-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" name="password" title="pass">
+                    </div>
+                    <div id="loginErrorMsg" class="alert alert-error hide">Wrong username og password</div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="remember" id="remember"> Recordar contraseña</label>
+                        </div>
+                        <a href="autenticador.html" class="btn btn-primary">Entrar</a>
+                </form>
+    		</div>
+    	</div>
+    </div>
+    </div>
+    </div>
+
+		<footer class="footer-distributed">
+			<div class="footer-right">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-github"></i></a>
+			</div>
+
+			<div class="footer-left">
+				<p class="footer-links">
+					<a href="#">Inicio</a>·
+					<a href="#">Blog</a>·
+					<a href="#">Acerca de</a>·
+					<a href="#">Contacto</a>
+				</p>
+				<p>Universidad Tecnológica de la Mixteca&copy;</p>
+			</div>
+		</footer>
+    </div>
+
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
